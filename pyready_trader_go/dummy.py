@@ -79,6 +79,9 @@ class AutoTrader(BaseAutoTrader):
         self.z_score = 0
         self.prev_z = 0
 
+        self.buy_trigger = False
+        self.sell_trigger = True
+
 
 
         self.ready = False
@@ -157,32 +160,33 @@ class AutoTrader(BaseAutoTrader):
         self.fut_etf_ratio_avg = self.fut_etf_ratio_sum / 50
 
         # print(f' avg: {self.fut_etf_ratio_avg} ratio: {self.fut_etf_ratio} sd: {self.ratio_sd} zscore: {self.z_score}')
+        print(f'zscore: {self.z_score}')
 
         '''Short when z-score above 1 and long when z-score below 1.'''
         #right now, I think it's losing money on trades where the prices are near the convergence but the ask/bid spread is negative, so it trades at a loss
-        if self.ready and self.z_score > 1:
-            if self.bid_id == 0 and self.position < POSITION_LIMIT:
+        if self.ready and self.z_score > self.prev_z and self.z_score > 0.75:
+            if self.bid_id == 0 and self.position + LOT_SIZE < POSITION_LIMIT:
                 self.bid_id = next(self.order_ids)
                 self.send_insert_order(self.bid_id, Side.BUY, self.etf_ask, LOT_SIZE, Lifespan.FAK)
                 self.bids.add(self.bid_id)
 
-        if self.ready and self.position > 0 and self.z_score <= 0 and self.prev_z > 0:
-            if self.ask_id == 0 and self.position > -POSITION_LIMIT:
-                self.ask_id = next(self.order_ids)
-                self.send_insert_order(self.ask_id, Side.SELL, self.etf_ask, LOT_SIZE, Lifespan.FAK)
-                self.asks.add(self.ask_id)
+        # if self.ready and self.position > 0 and self.z_score <= 0 and self.prev_z > 0:
+        #     if self.ask_id == 0 and self.position - LOT_SIZE > -POSITION_LIMIT:
+        #         self.ask_id = next(self.order_ids)
+        #         self.send_insert_order(self.ask_id, Side.SELL, self.etf_bid, LOT_SIZE, Lifespan.FAK)
+        #         self.asks.add(self.ask_id)
 
-        if self.ready and self.z_score < 1:
-            if self.ask_id == 0 and self.position > -POSITION_LIMIT:
+        if self.ready and self.z_score < self.prev_z and self.z_score < -0.75:
+            if self.ask_id == 0 and self.position - LOT_SIZE > -POSITION_LIMIT:
                 self.ask_id = next(self.order_ids)
-                self.send_insert_order(self.ask_id, Side.SELL, self.etf_ask, LOT_SIZE, Lifespan.FAK)
+                self.send_insert_order(self.ask_id, Side.SELL, self.etf_bid, LOT_SIZE, Lifespan.FAK)
                 self.asks.add(self.ask_id)
         
-        if self.ready and self.position <= 0 and self.z_score >= 0  and self.prev_z < 0:
-            if self.bid_id == 0 and self.position < POSITION_LIMIT:
-                self.bid_id = next(self.order_ids)
-                self.send_insert_order(self.bid_id, Side.BUY, self.etf_ask, LOT_SIZE, Lifespan.FAK)
-                self.bids.add(self.bid_id)
+        # if self.ready and self.position <= 0 and self.z_score >= 0  and self.prev_z < 0:
+        #     if self.bid_id == 0 and self.position + LOT_SIZE < POSITION_LIMIT:
+        #         self.bid_id = next(self.order_ids)
+        #         self.send_insert_order(self.bid_id, Side.BUY, self.etf_ask, LOT_SIZE, Lifespan.FAK)
+        #         self.bids.add(self.bid_id)
         
 
         self.prev_z = self.z_score
@@ -253,13 +257,21 @@ class AutoTrader(BaseAutoTrader):
         """
         self.logger.info("received order filled for order %d with price %d and volume %d", client_order_id,
                          price, volume)
-        print(f'price: {price} buy or sell: {"long" if client_order_id in self.bids else "short"}')
+        print(f'price: {price} buy or sell: {"buy" if client_order_id in self.bids else "sell"}')
+        # print(f'etf spread: {self.etf_bid}, {self.etf_ask} fut spread: {self.fut_bid}, {self.fut_ask}')
+        # print(f'etf_fut_spread: {self.fut_price - self.etf_price}')
         if client_order_id in self.bids:
             self.position += volume
-            self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
+            self.send_hedge_order(next(self.order_ids), Side.ASK, self.fut_bid, volume)
+            print(f'spread: {self.fut_bid - self.etf_ask}')
+            self.buy_trigger = True
+            self.sell_trigger = False
         elif client_order_id in self.asks:
             self.position -= volume
-            self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
+            self.send_hedge_order(next(self.order_ids), Side.BID, self.fut_ask, volume)
+            print(f'spread: {self.etf_bid - self.fut_ask}')
+            self.sell_trigger = True
+            self.buy_trigger = True
 
     def on_order_status_message(self, client_order_id: int, fill_volume: int, remaining_volume: int,
                                 fees: int) -> None:

@@ -1474,3 +1474,731 @@ ConnectionResetError: [WinError 10054] An existing connection was forcibly close
 2023-03-11 00:16:28,050 [INFO   ] [EXECUTION] fd=1192 'Dummy' is ready!
 2023-03-11 00:16:28,365 [INFO   ] [CONNECTION] fd=1196 connection established: peer=127.0.0.1:55328
 2023-03-11 00:16:33,022 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:25:09,371 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:25:09,372 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:25:09,373 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:25:09,374 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:25:09,375 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:25:09,391 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:25:09,391 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:25:09,410 [INFO   ] [CONNECTION] fd=1216 connection established: peer=127.0.0.1:55369
+2023-03-11 00:25:09,410 [INFO   ] [EXECUTION] fd=1216 'Dummy' is ready!
+2023-03-11 00:25:09,784 [INFO   ] [CONNECTION] fd=1132 connection established: peer=127.0.0.1:55370
+2023-03-11 00:25:14,414 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:25:20,948 [INFO   ] [CONNECTION] fd=1216 connection lost
+2023-03-11 00:25:20,949 [WARNING] [EXECUTION] fd=1216 lost connection to auto-trader:
+2023-03-11 00:25:57,676 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:25:57,677 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:25:57,678 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:25:57,678 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:25:57,679 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:25:57,692 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:25:57,693 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:25:57,712 [INFO   ] [CONNECTION] fd=1184 connection established: peer=127.0.0.1:55376
+2023-03-11 00:25:57,712 [INFO   ] [EXECUTION] fd=1184 'Dummy' is ready!
+2023-03-11 00:25:58,033 [INFO   ] [CONNECTION] fd=1196 connection established: peer=127.0.0.1:55377
+2023-03-11 00:26:02,716 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:26:09,243 [INFO   ] [CONNECTION] fd=1184 connection lost
+2023-03-11 00:26:09,244 [WARNING] [EXECUTION] fd=1184 lost connection to auto-trader:
+2023-03-11 00:26:46,107 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:26:46,108 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:26:46,110 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:26:46,110 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:26:46,112 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:26:46,126 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:26:46,127 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:26:46,172 [INFO   ] [CONNECTION] fd=596 connection established: peer=127.0.0.1:55383
+2023-03-11 00:26:46,173 [INFO   ] [EXECUTION] fd=596 'Dummy' is ready!
+2023-03-11 00:26:46,398 [INFO   ] [CONNECTION] fd=1200 connection established: peer=127.0.0.1:55384
+2023-03-11 00:26:51,159 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:26:57,661 [INFO   ] [CONNECTION] fd=596 connection lost
+2023-03-11 00:26:57,661 [WARNING] [EXECUTION] fd=596 lost connection to auto-trader:
+2023-03-11 00:27:58,359 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:27:58,360 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:27:58,361 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:27:58,361 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:27:58,362 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:27:58,374 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:27:58,374 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:27:58,397 [INFO   ] [CONNECTION] fd=1212 connection established: peer=127.0.0.1:55394
+2023-03-11 00:27:58,398 [INFO   ] [EXECUTION] fd=1212 'Dummy' is ready!
+2023-03-11 00:27:58,882 [INFO   ] [CONNECTION] fd=1148 connection established: peer=127.0.0.1:55395
+2023-03-11 00:28:03,404 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:28:09,920 [INFO   ] [CONNECTION] fd=1212 connection lost
+2023-03-11 00:28:09,921 [WARNING] [EXECUTION] fd=1212 lost connection to auto-trader:
+2023-03-11 00:28:38,676 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:28:38,676 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:28:38,678 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:28:38,678 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:28:38,680 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:28:38,694 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:28:38,694 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:28:38,737 [INFO   ] [CONNECTION] fd=1208 connection established: peer=127.0.0.1:55403
+2023-03-11 00:28:38,738 [INFO   ] [EXECUTION] fd=1208 'Dummy' is ready!
+2023-03-11 00:28:38,899 [INFO   ] [CONNECTION] fd=1212 connection established: peer=127.0.0.1:55404
+2023-03-11 00:28:43,719 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:29:15,047 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:29:15,047 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:29:15,048 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:29:15,048 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:29:15,049 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:29:15,057 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:29:15,057 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:29:15,072 [INFO   ] [CONNECTION] fd=1180 connection established: peer=127.0.0.1:55413
+2023-03-11 00:29:15,073 [INFO   ] [EXECUTION] fd=1180 'Dummy' is ready!
+2023-03-11 00:29:15,552 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55414
+2023-03-11 00:29:20,079 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:29:27,318 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.234000 client_order_id=4 message='price is not a multiple of tick size'
+2023-03-11 00:29:27,599 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.515000 client_order_id=5 message='price is not a multiple of tick size'
+2023-03-11 00:29:27,850 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.765000 client_order_id=6 message='price is not a multiple of tick size'
+2023-03-11 00:29:28,100 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.015000 client_order_id=7 message='price is not a multiple of tick size'
+2023-03-11 00:29:28,335 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.250000 client_order_id=8 message='price is not a multiple of tick size'
+2023-03-11 00:29:28,583 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.500000 client_order_id=9 message='price is not a multiple of tick size'
+2023-03-11 00:29:28,817 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.734000 client_order_id=10 message='price is not a multiple of tick size'
+2023-03-11 00:29:29,095 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.015000 client_order_id=11 message='price is not a multiple of tick size'
+2023-03-11 00:29:29,848 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.765000 client_order_id=15 message='price is not a multiple of tick size'
+2023-03-11 00:29:30,104 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=10.031000 client_order_id=16 message='price is not a multiple of tick size'
+2023-03-11 00:29:31,556 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=11.468000 client_order_id=23 message='price is not a multiple of tick size'
+2023-03-11 00:29:31,813 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=11.734000 client_order_id=24 message='price is not a multiple of tick size'
+2023-03-11 00:29:34,853 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=14.765000 client_order_id=37 message='price is not a multiple of tick size'
+2023-03-11 00:29:35,056 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=14.968000 client_order_id=38 message='price is not a multiple of tick size'
+2023-03-11 00:29:35,345 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.265000 client_order_id=39 message='price is not a multiple of tick size'
+2023-03-11 00:29:35,608 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.531000 client_order_id=40 message='price is not a multiple of tick size'
+2023-03-11 00:29:35,796 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.718000 client_order_id=41 message='price is not a multiple of tick size'
+2023-03-11 00:29:36,069 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.984000 client_order_id=42 message='price is not a multiple of tick size'
+2023-03-11 00:29:36,342 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.265000 client_order_id=43 message='price is not a multiple of tick size'
+2023-03-11 00:29:36,574 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.484000 client_order_id=44 message='price is not a multiple of tick size'
+2023-03-11 00:29:36,846 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.765000 client_order_id=45 message='price is not a multiple of tick size'
+2023-03-11 00:29:36,847 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.765000 client_order_id=46 message='price is not a multiple of tick size'
+2023-03-11 00:29:37,137 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.062000 client_order_id=47 message='price is not a multiple of tick size'
+2023-03-11 00:29:37,347 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.265000 client_order_id=48 message='price is not a multiple of tick size'
+2023-03-11 00:29:37,597 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.515000 client_order_id=49 message='price is not a multiple of tick size'
+2023-03-11 00:29:37,785 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.703000 client_order_id=50 message='price is not a multiple of tick size'
+2023-03-11 00:29:38,095 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=18.015000 client_order_id=51 message='price is not a multiple of tick size'
+2023-03-11 00:29:38,347 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=18.265000 client_order_id=52 message='price is not a multiple of tick size'
+2023-03-11 00:29:38,624 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=18.546000 client_order_id=53 message='price is not a multiple of tick size'
+2023-03-11 00:29:38,880 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=18.796000 client_order_id=54 message='price is not a multiple of tick size'
+2023-03-11 00:29:39,089 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=19.015000 client_order_id=55 message='price is not a multiple of tick size'
+2023-03-11 00:29:39,352 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=19.265000 client_order_id=56 message='price is not a multiple of tick size'
+2023-03-11 00:29:39,629 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=19.546000 client_order_id=57 message='price is not a multiple of tick size'
+2023-03-11 00:29:39,787 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=19.703000 client_order_id=58 message='price is not a multiple of tick size'
+2023-03-11 00:29:40,149 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=20.062000 client_order_id=59 message='price is not a multiple of tick size'
+2023-03-11 00:29:40,290 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=20.203000 client_order_id=60 message='price is not a multiple of tick size'
+2023-03-11 00:29:40,875 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=20.796000 client_order_id=62 message='price is not a multiple of tick size'
+2023-03-11 00:29:40,876 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=20.796000 client_order_id=63 message='price is not a multiple of tick size'
+2023-03-11 00:29:41,092 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.015000 client_order_id=64 message='price is not a multiple of tick size'
+2023-03-11 00:29:41,350 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.265000 client_order_id=65 message='price is not a multiple of tick size'
+2023-03-11 00:29:41,350 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.265000 client_order_id=66 message='price is not a multiple of tick size'
+2023-03-11 00:29:41,614 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.531000 client_order_id=67 message='price is not a multiple of tick size'
+2023-03-11 00:29:41,785 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.703000 client_order_id=68 message='price is not a multiple of tick size'
+2023-03-11 00:29:42,092 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.015000 client_order_id=69 message='price is not a multiple of tick size'
+2023-03-11 00:29:42,093 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.015000 client_order_id=70 message='price is not a multiple of tick size'
+2023-03-11 00:29:42,352 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.265000 client_order_id=71 message='price is not a multiple of tick size'
+2023-03-11 00:29:42,604 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.515000 client_order_id=72 message='price is not a multiple of tick size'
+2023-03-11 00:29:42,844 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.765000 client_order_id=73 message='price is not a multiple of tick size'
+2023-03-11 00:29:43,045 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.968000 client_order_id=74 message='price is not a multiple of tick size'
+2023-03-11 00:29:43,397 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.312000 client_order_id=75 message='price is not a multiple of tick size'
+2023-03-11 00:29:43,536 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.453000 client_order_id=76 message='price is not a multiple of tick size'
+2023-03-11 00:29:43,838 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.750000 client_order_id=77 message='price is not a multiple of tick size'
+2023-03-11 00:29:44,101 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.015000 client_order_id=78 message='price is not a multiple of tick size'
+2023-03-11 00:29:44,335 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.250000 client_order_id=79 message='price is not a multiple of tick size'
+2023-03-11 00:29:44,593 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.515000 client_order_id=80 message='price is not a multiple of tick size'
+2023-03-11 00:29:44,593 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.515000 client_order_id=81 message='price is not a multiple of tick size'
+2023-03-11 00:29:44,865 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.781000 client_order_id=82 message='price is not a multiple of tick size'
+2023-03-11 00:29:45,120 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=25.031000 client_order_id=83 message='price is not a multiple of tick size'
+2023-03-11 00:29:45,354 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=25.281000 client_order_id=84 message='price is not a multiple of tick size'
+2023-03-11 00:29:45,631 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=25.546000 client_order_id=85 message='price is not a multiple of tick size'
+2023-03-11 00:29:45,788 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=25.703000 client_order_id=86 message='price is not a multiple of tick size'
+2023-03-11 00:29:46,111 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.031000 client_order_id=87 message='price is not a multiple of tick size'
+2023-03-11 00:29:46,342 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.265000 client_order_id=88 message='price is not a multiple of tick size'
+2023-03-11 00:29:46,594 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.515000 client_order_id=89 message='price is not a multiple of tick size'
+2023-03-11 00:29:46,598 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.515000 client_order_id=90 message='price is not a multiple of tick size'
+2023-03-11 00:29:46,795 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.718000 client_order_id=91 message='price is not a multiple of tick size'
+2023-03-11 00:29:47,044 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.968000 client_order_id=92 message='price is not a multiple of tick size'
+2023-03-11 00:29:47,364 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.281000 client_order_id=93 message='price is not a multiple of tick size'
+2023-03-11 00:29:47,605 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.531000 client_order_id=94 message='price is not a multiple of tick size'
+2023-03-11 00:29:47,783 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.703000 client_order_id=95 message='price is not a multiple of tick size'
+2023-03-11 00:29:48,059 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.984000 client_order_id=96 message='price is not a multiple of tick size'
+2023-03-11 00:29:48,363 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.281000 client_order_id=97 message='price is not a multiple of tick size'
+2023-03-11 00:29:48,600 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.515000 client_order_id=99 message='price is not a multiple of tick size'
+2023-03-11 00:29:48,867 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.781000 client_order_id=100 message='price is not a multiple of tick size'
+2023-03-11 00:29:49,056 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.968000 client_order_id=101 message='price is not a multiple of tick size'
+2023-03-11 00:29:50,337 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.250000 client_order_id=107 message='price is not a multiple of tick size'
+2023-03-11 00:29:50,541 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.453000 client_order_id=108 message='price is not a multiple of tick size'
+2023-03-11 00:29:50,840 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.765000 client_order_id=109 message='price is not a multiple of tick size'
+2023-03-11 00:29:51,148 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.062000 client_order_id=110 message='price is not a multiple of tick size'
+2023-03-11 00:29:51,329 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.250000 client_order_id=111 message='price is not a multiple of tick size'
+2023-03-11 00:29:51,602 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.515000 client_order_id=112 message='price is not a multiple of tick size'
+2023-03-11 00:29:51,830 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.750000 client_order_id=113 message='price is not a multiple of tick size'
+2023-03-11 00:29:52,089 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=32.000000 client_order_id=114 message='price is not a multiple of tick size'
+2023-03-11 00:29:52,091 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=32.015000 client_order_id=115 message='price is not a multiple of tick size'
+2023-03-11 00:29:52,549 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=32.468000 client_order_id=118 message='price is not a multiple of tick size'
+2023-03-11 00:29:52,798 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=32.718000 client_order_id=119 message='price is not a multiple of tick size'
+2023-03-11 00:29:53,044 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=32.968000 client_order_id=120 message='price is not a multiple of tick size'
+2023-03-11 00:29:55,787 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=35.703000 client_order_id=134 message='price is not a multiple of tick size'
+2023-03-11 00:29:56,133 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=36.046000 client_order_id=135 message='price is not a multiple of tick size'
+2023-03-11 00:29:56,285 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=36.203000 client_order_id=136 message='price is not a multiple of tick size'
+2023-03-11 00:29:56,599 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=36.515000 client_order_id=137 message='price is not a multiple of tick size'
+2023-03-11 00:29:56,879 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=36.796000 client_order_id=138 message='price is not a multiple of tick size'
+2023-03-11 00:29:57,102 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.015000 client_order_id=139 message='price is not a multiple of tick size'
+2023-03-11 00:29:57,302 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.218000 client_order_id=140 message='price is not a multiple of tick size'
+2023-03-11 00:29:57,633 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.546000 client_order_id=141 message='price is not a multiple of tick size'
+2023-03-11 00:29:57,866 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.781000 client_order_id=142 message='price is not a multiple of tick size'
+2023-03-11 00:29:58,080 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.984000 client_order_id=143 message='price is not a multiple of tick size'
+2023-03-11 00:29:58,084 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.000000 client_order_id=144 message='price is not a multiple of tick size'
+2023-03-11 00:29:58,389 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.312000 client_order_id=145 message='price is not a multiple of tick size'
+2023-03-11 00:29:58,604 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.531000 client_order_id=146 message='price is not a multiple of tick size'
+2023-03-11 00:29:58,885 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.796000 client_order_id=147 message='price is not a multiple of tick size'
+2023-03-11 00:29:59,132 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=39.046000 client_order_id=148 message='price is not a multiple of tick size'
+2023-03-11 00:29:59,299 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=39.218000 client_order_id=149 message='price is not a multiple of tick size'
+2023-03-11 00:29:59,586 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=39.500000 client_order_id=150 message='price is not a multiple of tick size'
+2023-03-11 00:29:59,798 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=39.718000 client_order_id=151 message='price is not a multiple of tick size'
+2023-03-11 00:30:00,132 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=40.046000 client_order_id=152 message='price is not a multiple of tick size'
+2023-03-11 00:30:00,382 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=40.296000 client_order_id=153 message='price is not a multiple of tick size'
+2023-03-11 00:30:00,566 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=40.484000 client_order_id=154 message='price is not a multiple of tick size'
+2023-03-11 00:30:00,832 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=40.750000 client_order_id=155 message='price is not a multiple of tick size'
+2023-03-11 00:30:05,110 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=45.031000 client_order_id=175 message='price is not a multiple of tick size'
+2023-03-11 00:30:05,344 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=45.265000 client_order_id=176 message='price is not a multiple of tick size'
+2023-03-11 00:30:05,344 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=45.265000 client_order_id=177 message='price is not a multiple of tick size'
+2023-03-11 00:30:05,609 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=45.531000 client_order_id=178 message='price is not a multiple of tick size'
+2023-03-11 00:30:05,815 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=45.734000 client_order_id=179 message='price is not a multiple of tick size'
+2023-03-11 00:30:06,083 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=46.000000 client_order_id=180 message='price is not a multiple of tick size'
+2023-03-11 00:30:06,390 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=46.312000 client_order_id=181 message='price is not a multiple of tick size'
+2023-03-11 00:30:06,590 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=46.515000 client_order_id=182 message='price is not a multiple of tick size'
+2023-03-11 00:30:06,799 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=46.718000 client_order_id=183 message='price is not a multiple of tick size'
+2023-03-11 00:30:07,112 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.031000 client_order_id=184 message='price is not a multiple of tick size'
+2023-03-11 00:30:07,353 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.265000 client_order_id=185 message='price is not a multiple of tick size'
+2023-03-11 00:30:07,629 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.546000 client_order_id=186 message='price is not a multiple of tick size'
+2023-03-11 00:30:07,816 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.734000 client_order_id=187 message='price is not a multiple of tick size'
+2023-03-11 00:30:08,039 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.953000 client_order_id=188 message='price is not a multiple of tick size'
+2023-03-11 00:30:08,322 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=48.250000 client_order_id=189 message='price is not a multiple of tick size'
+2023-03-11 00:30:08,565 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=48.484000 client_order_id=190 message='price is not a multiple of tick size'
+2023-03-11 00:30:11,548 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=51.468000 client_order_id=203 message='price is not a multiple of tick size'
+2023-03-11 00:30:11,817 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=51.734000 client_order_id=204 message='price is not a multiple of tick size'
+2023-03-11 00:30:12,130 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=52.046000 client_order_id=206 message='price is not a multiple of tick size'
+2023-03-11 00:30:12,397 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=52.312000 client_order_id=207 message='price is not a multiple of tick size'
+2023-03-11 00:30:13,124 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=53.046000 client_order_id=210 message='price is not a multiple of tick size'
+2023-03-11 00:30:13,298 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=53.218000 client_order_id=211 message='price is not a multiple of tick size'
+2023-03-11 00:30:13,536 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=53.453000 client_order_id=212 message='price is not a multiple of tick size'
+2023-03-11 00:30:13,827 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=53.734000 client_order_id=213 message='price is not a multiple of tick size'
+2023-03-11 00:30:13,827 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=53.750000 client_order_id=214 message='price is not a multiple of tick size'
+2023-03-11 00:30:14,597 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=54.515000 client_order_id=217 message='price is not a multiple of tick size'
+2023-03-11 00:30:14,864 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=54.781000 client_order_id=218 message='price is not a multiple of tick size'
+2023-03-11 00:30:15,334 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=55.250000 client_order_id=220 message='price is not a multiple of tick size'
+2023-03-11 00:30:15,335 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=55.250000 client_order_id=221 message='price is not a multiple of tick size'
+2023-03-11 00:30:16,097 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=56.015000 client_order_id=225 message='price is not a multiple of tick size'
+2023-03-11 00:30:16,345 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=56.265000 client_order_id=226 message='price is not a multiple of tick size'
+2023-03-11 00:30:16,582 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=56.500000 client_order_id=227 message='price is not a multiple of tick size'
+2023-03-11 00:30:16,789 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=56.703000 client_order_id=228 message='price is not a multiple of tick size'
+2023-03-11 00:30:17,073 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=56.984000 client_order_id=229 message='price is not a multiple of tick size'
+2023-03-11 00:30:17,373 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=57.296000 client_order_id=230 message='price is not a multiple of tick size'
+2023-03-11 00:30:17,583 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=57.500000 client_order_id=231 message='price is not a multiple of tick size'
+2023-03-11 00:30:17,840 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=57.765000 client_order_id=232 message='price is not a multiple of tick size'
+2023-03-11 00:30:18,054 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=57.968000 client_order_id=233 message='price is not a multiple of tick size'
+2023-03-11 00:30:18,289 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=58.203000 client_order_id=234 message='price is not a multiple of tick size'
+2023-03-11 00:30:18,617 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=58.531000 client_order_id=235 message='price is not a multiple of tick size'
+2023-03-11 00:30:18,618 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=58.531000 client_order_id=236 message='price is not a multiple of tick size'
+2023-03-11 00:30:18,803 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=58.718000 client_order_id=237 message='price is not a multiple of tick size'
+2023-03-11 00:30:19,089 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=59.015000 client_order_id=238 message='price is not a multiple of tick size'
+2023-03-11 00:30:19,336 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=59.250000 client_order_id=239 message='price is not a multiple of tick size'
+2023-03-11 00:30:19,593 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=59.515000 client_order_id=240 message='price is not a multiple of tick size'
+2023-03-11 00:30:19,826 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=59.734000 client_order_id=241 message='price is not a multiple of tick size'
+2023-03-11 00:30:20,137 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=60.062000 client_order_id=242 message='price is not a multiple of tick size'
+2023-03-11 00:30:20,336 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=60.250000 client_order_id=243 message='price is not a multiple of tick size'
+2023-03-11 00:30:20,601 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=60.515000 client_order_id=244 message='price is not a multiple of tick size'
+2023-03-11 00:30:20,602 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=60.515000 client_order_id=245 message='price is not a multiple of tick size'
+2023-03-11 00:30:20,802 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=60.718000 client_order_id=246 message='price is not a multiple of tick size'
+2023-03-11 00:30:21,034 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=60.953000 client_order_id=247 message='price is not a multiple of tick size'
+2023-03-11 00:30:21,317 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=61.234000 client_order_id=248 message='price is not a multiple of tick size'
+2023-03-11 00:32:00,133 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:32:00,134 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:32:00,134 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:32:00,134 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:32:00,135 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:32:00,143 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:32:00,143 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:32:00,165 [INFO   ] [CONNECTION] fd=1236 connection established: peer=127.0.0.1:55424
+2023-03-11 00:32:00,166 [INFO   ] [EXECUTION] fd=1236 'Dummy' is ready!
+2023-03-11 00:32:00,682 [INFO   ] [CONNECTION] fd=1240 connection established: peer=127.0.0.1:55425
+2023-03-11 00:32:05,164 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:33:36,900 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:33:36,901 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:33:36,902 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:33:36,902 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:33:36,903 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:33:36,920 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:33:36,920 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:33:36,938 [INFO   ] [CONNECTION] fd=1188 connection established: peer=127.0.0.1:55435
+2023-03-11 00:33:36,938 [INFO   ] [EXECUTION] fd=1188 'Dummy' is ready!
+2023-03-11 00:33:37,299 [INFO   ] [CONNECTION] fd=1200 connection established: peer=127.0.0.1:55436
+2023-03-11 00:33:41,944 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:34:06,180 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.234000 client_order_id=77 message='ETF position limit breached'
+2023-03-11 00:34:06,180 [INFO   ] [COMPETITOR] 'Dummy' closing execution channel at time=24.234000
+2023-03-11 00:34:06,180 [INFO   ] [CONNECTION] fd=1188 connection lost
+2023-03-11 00:34:35,923 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:34:35,924 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:34:35,925 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:34:35,925 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:34:35,926 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:34:35,940 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:34:35,940 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:34:35,958 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55445
+2023-03-11 00:34:35,959 [INFO   ] [EXECUTION] fd=1192 'Dummy' is ready!
+2023-03-11 00:34:36,507 [INFO   ] [CONNECTION] fd=864 connection established: peer=127.0.0.1:55446
+2023-03-11 00:34:40,967 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:35:05,285 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.313000 client_order_id=81 message='ETF position limit breached'
+2023-03-11 00:35:05,285 [INFO   ] [COMPETITOR] 'Dummy' closing execution channel at time=24.313000
+2023-03-11 00:35:05,285 [INFO   ] [CONNECTION] fd=1192 connection lost
+2023-03-11 00:38:42,100 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:38:42,100 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:38:42,101 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:38:42,101 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:38:42,103 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:38:42,111 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:38:42,112 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:38:42,138 [INFO   ] [CONNECTION] fd=1188 connection established: peer=127.0.0.1:55468
+2023-03-11 00:38:42,138 [INFO   ] [EXECUTION] fd=1188 'Dummy' is ready!
+2023-03-11 00:38:43,465 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55469
+2023-03-11 00:38:54,766 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:38:54,767 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:38:54,768 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:38:54,768 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:38:54,769 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:38:54,774 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:38:54,775 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:38:54,820 [INFO   ] [CONNECTION] fd=1220 connection established: peer=127.0.0.1:55475
+2023-03-11 00:38:54,821 [INFO   ] [EXECUTION] fd=1220 'Dummy' is ready!
+2023-03-11 00:38:54,985 [INFO   ] [CONNECTION] fd=664 connection established: peer=127.0.0.1:55476
+2023-03-11 00:38:59,811 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:39:24,085 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.266000 client_order_id=70 message='ETF position limit breached'
+2023-03-11 00:39:24,085 [INFO   ] [COMPETITOR] 'Dummy' closing execution channel at time=24.266000
+2023-03-11 00:39:24,085 [INFO   ] [CONNECTION] fd=1220 connection lost
+2023-03-11 00:40:30,982 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:40:30,983 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:40:30,983 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:40:30,983 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:40:30,984 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:40:30,993 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:40:30,994 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:40:31,010 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55490
+2023-03-11 00:40:31,011 [INFO   ] [EXECUTION] fd=1192 'Dummy' is ready!
+2023-03-11 00:40:31,511 [INFO   ] [CONNECTION] fd=1196 connection established: peer=127.0.0.1:55491
+2023-03-11 00:40:36,002 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:42:56,168 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:42:56,169 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:42:56,171 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:42:56,172 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:42:56,174 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:42:56,199 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:42:56,199 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:42:56,217 [INFO   ] [CONNECTION] fd=1208 connection established: peer=127.0.0.1:55515
+2023-03-11 00:42:56,218 [INFO   ] [EXECUTION] fd=1208 'Dummy' is ready!
+2023-03-11 00:42:56,602 [INFO   ] [CONNECTION] fd=1212 connection established: peer=127.0.0.1:55516
+2023-03-11 00:43:01,228 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:43:08,021 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=6.797000 client_order_id=1 message='price is not a multiple of tick size'
+2023-03-11 00:43:08,236 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.016000 client_order_id=2 message='price is not a multiple of tick size'
+2023-03-11 00:43:08,512 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.297000 client_order_id=3 message='price is not a multiple of tick size'
+2023-03-11 00:43:08,748 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.531000 client_order_id=4 message='price is not a multiple of tick size'
+2023-03-11 00:43:08,971 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.750000 client_order_id=5 message='price is not a multiple of tick size'
+2023-03-11 00:43:09,241 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.016000 client_order_id=6 message='price is not a multiple of tick size'
+2023-03-11 00:43:09,493 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.266000 client_order_id=7 message='price is not a multiple of tick size'
+2023-03-11 00:43:09,745 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.516000 client_order_id=8 message='price is not a multiple of tick size'
+2023-03-11 00:43:10,000 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.781000 client_order_id=9 message='price is not a multiple of tick size'
+2023-03-11 00:43:10,246 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.031000 client_order_id=10 message='price is not a multiple of tick size'
+2023-03-11 00:43:10,249 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.031000 client_order_id=11 message='price is not a multiple of tick size'
+2023-03-11 00:43:10,533 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.313000 client_order_id=12 message='price is not a multiple of tick size'
+2023-03-11 00:43:10,742 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.516000 client_order_id=13 message='price is not a multiple of tick size'
+2023-03-11 00:43:10,975 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.750000 client_order_id=14 message='price is not a multiple of tick size'
+2023-03-11 00:43:11,455 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=10.235000 client_order_id=15 message='price is not a multiple of tick size'
+2023-03-11 00:43:11,744 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=10.516000 client_order_id=16 message='price is not a multiple of tick size'
+2023-03-11 00:43:12,723 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=11.500000 client_order_id=17 message='price is not a multiple of tick size'
+2023-03-11 00:43:13,215 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=11.985000 client_order_id=18 message='price is not a multiple of tick size'
+2023-03-11 00:43:15,008 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=13.781000 client_order_id=19 message='price is not a multiple of tick size'
+2023-03-11 00:43:15,248 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=14.031000 client_order_id=20 message='price is not a multiple of tick size'
+2023-03-11 00:43:15,248 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=14.031000 client_order_id=21 message='price is not a multiple of tick size'
+2023-03-11 00:43:15,440 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=14.219000 client_order_id=22 message='price is not a multiple of tick size'
+2023-03-11 00:43:15,763 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=14.547000 client_order_id=23 message='price is not a multiple of tick size'
+2023-03-11 00:43:16,274 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.047000 client_order_id=24 message='price is not a multiple of tick size'
+2023-03-11 00:43:16,747 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.531000 client_order_id=25 message='price is not a multiple of tick size'
+2023-03-11 00:43:16,961 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.735000 client_order_id=26 message='price is not a multiple of tick size'
+2023-03-11 00:43:17,248 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.031000 client_order_id=27 message='price is not a multiple of tick size'
+2023-03-11 00:43:17,431 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.203000 client_order_id=28 message='price is not a multiple of tick size'
+2023-03-11 00:43:17,732 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.516000 client_order_id=29 message='price is not a multiple of tick size'
+2023-03-11 00:43:17,732 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.516000 client_order_id=30 message='price is not a multiple of tick size'
+2023-03-11 00:43:17,935 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.719000 client_order_id=31 message='price is not a multiple of tick size'
+2023-03-11 00:43:18,215 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.000000 client_order_id=32 message='price is not a multiple of tick size'
+2023-03-11 00:43:18,470 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.250000 client_order_id=33 message='price is not a multiple of tick size'
+2023-03-11 00:43:18,764 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.531000 client_order_id=34 message='price is not a multiple of tick size'
+2023-03-11 00:43:19,263 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=18.031000 client_order_id=35 message='price is not a multiple of tick size'
+2023-03-11 00:43:19,768 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=18.547000 client_order_id=36 message='price is not a multiple of tick size'
+2023-03-11 00:43:20,688 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=19.469000 client_order_id=37 message='price is not a multiple of tick size'
+2023-03-11 00:43:21,213 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=19.969000 client_order_id=38 message='price is not a multiple of tick size'
+2023-03-11 00:43:21,523 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=20.297000 client_order_id=39 message='price is not a multiple of tick size'
+2023-03-11 00:43:21,943 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=20.719000 client_order_id=40 message='price is not a multiple of tick size'
+2023-03-11 00:43:22,482 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.266000 client_order_id=41 message='price is not a multiple of tick size'
+2023-03-11 00:43:23,468 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.250000 client_order_id=42 message='price is not a multiple of tick size'
+2023-03-11 00:43:23,468 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.250000 client_order_id=43 message='price is not a multiple of tick size'
+2023-03-11 00:43:23,755 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.531000 client_order_id=44 message='price is not a multiple of tick size'
+2023-03-11 00:43:24,545 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.328000 client_order_id=45 message='price is not a multiple of tick size'
+2023-03-11 00:43:24,722 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.500000 client_order_id=46 message='price is not a multiple of tick size'
+2023-03-11 00:43:25,020 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.797000 client_order_id=47 message='price is not a multiple of tick size'
+2023-03-11 00:43:25,198 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.985000 client_order_id=48 message='price is not a multiple of tick size'
+2023-03-11 00:43:25,514 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.281000 client_order_id=49 message='price is not a multiple of tick size'
+2023-03-11 00:43:25,732 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.516000 client_order_id=50 message='price is not a multiple of tick size'
+2023-03-11 00:43:26,018 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.797000 client_order_id=51 message='price is not a multiple of tick size'
+2023-03-11 00:43:26,019 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.797000 client_order_id=52 message='price is not a multiple of tick size'
+2023-03-11 00:43:26,213 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=25.000000 client_order_id=53 message='price is not a multiple of tick size'
+2023-03-11 00:43:27,035 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=25.813000 client_order_id=54 message='price is not a multiple of tick size'
+2023-03-11 00:43:27,228 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.000000 client_order_id=55 message='price is not a multiple of tick size'
+2023-03-11 00:43:27,449 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.235000 client_order_id=56 message='price is not a multiple of tick size'
+2023-03-11 00:43:27,776 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.563000 client_order_id=57 message='price is not a multiple of tick size'
+2023-03-11 00:43:27,778 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.563000 client_order_id=58 message='price is not a multiple of tick size'
+2023-03-11 00:43:27,950 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.735000 client_order_id=59 message='price is not a multiple of tick size'
+2023-03-11 00:43:28,205 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.985000 client_order_id=60 message='price is not a multiple of tick size'
+2023-03-11 00:43:28,527 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.313000 client_order_id=61 message='price is not a multiple of tick size'
+2023-03-11 00:43:29,210 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.985000 client_order_id=62 message='price is not a multiple of tick size'
+2023-03-11 00:43:29,502 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.281000 client_order_id=63 message='price is not a multiple of tick size'
+2023-03-11 00:43:29,700 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.485000 client_order_id=64 message='price is not a multiple of tick size'
+2023-03-11 00:43:29,702 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.485000 client_order_id=65 message='price is not a multiple of tick size'
+2023-03-11 00:43:30,014 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.797000 client_order_id=66 message='price is not a multiple of tick size'
+2023-03-11 00:43:30,234 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=29.016000 client_order_id=67 message='price is not a multiple of tick size'
+2023-03-11 00:43:30,438 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=29.219000 client_order_id=68 message='price is not a multiple of tick size'
+2023-03-11 00:43:31,017 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=29.797000 client_order_id=69 message='price is not a multiple of tick size'
+2023-03-11 00:43:31,270 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.047000 client_order_id=70 message='price is not a multiple of tick size'
+2023-03-11 00:43:31,273 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.047000 client_order_id=71 message='price is not a multiple of tick size'
+2023-03-11 00:43:32,017 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.797000 client_order_id=72 message='price is not a multiple of tick size'
+2023-03-11 00:43:32,017 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.797000 client_order_id=73 message='price is not a multiple of tick size'
+2023-03-11 00:43:32,254 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.031000 client_order_id=74 message='price is not a multiple of tick size'
+2023-03-11 00:44:04,823 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:44:04,824 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:44:04,826 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:44:04,826 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:44:04,828 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:44:04,844 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:44:04,845 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:44:04,940 [INFO   ] [CONNECTION] fd=1168 connection established: peer=127.0.0.1:55530
+2023-03-11 00:44:04,941 [INFO   ] [EXECUTION] fd=1168 'Dummy' is ready!
+2023-03-11 00:44:05,065 [INFO   ] [CONNECTION] fd=1088 connection established: peer=127.0.0.1:55531
+2023-03-11 00:44:09,874 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:44:16,622 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=6.750000 client_order_id=1 message='price is not a multiple of tick size'
+2023-03-11 00:44:16,925 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.047000 client_order_id=2 message='price is not a multiple of tick size'
+2023-03-11 00:44:17,137 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.266000 client_order_id=3 message='price is not a multiple of tick size'
+2023-03-11 00:44:17,443 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.563000 client_order_id=4 message='price is not a multiple of tick size'
+2023-03-11 00:44:17,646 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=7.766000 client_order_id=5 message='price is not a multiple of tick size'
+2023-03-11 00:44:17,923 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.047000 client_order_id=6 message='price is not a multiple of tick size'
+2023-03-11 00:44:18,128 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.250000 client_order_id=7 message='price is not a multiple of tick size'
+2023-03-11 00:44:18,431 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.547000 client_order_id=8 message='price is not a multiple of tick size'
+2023-03-11 00:44:18,592 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.719000 client_order_id=9 message='price is not a multiple of tick size'
+2023-03-11 00:44:18,828 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.954000 client_order_id=10 message='price is not a multiple of tick size'
+2023-03-11 00:44:18,831 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=8.954000 client_order_id=11 message='price is not a multiple of tick size'
+2023-03-11 00:44:19,139 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.266000 client_order_id=12 message='price is not a multiple of tick size'
+2023-03-11 00:44:19,423 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=9.547000 client_order_id=13 message='price is not a multiple of tick size'
+2023-03-11 00:44:20,141 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=10.266000 client_order_id=14 message='price is not a multiple of tick size'
+2023-03-11 00:44:20,346 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=10.469000 client_order_id=15 message='price is not a multiple of tick size'
+2023-03-11 00:44:21,399 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=11.516000 client_order_id=16 message='price is not a multiple of tick size'
+2023-03-11 00:44:21,900 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=12.032000 client_order_id=17 message='price is not a multiple of tick size'
+2023-03-11 00:44:22,326 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=12.454000 client_order_id=18 message='price is not a multiple of tick size'
+2023-03-11 00:44:23,681 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=13.797000 client_order_id=19 message='price is not a multiple of tick size'
+2023-03-11 00:44:23,681 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=13.797000 client_order_id=20 message='price is not a multiple of tick size'
+2023-03-11 00:44:23,833 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=13.954000 client_order_id=21 message='price is not a multiple of tick size'
+2023-03-11 00:44:24,098 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=14.219000 client_order_id=22 message='price is not a multiple of tick size'
+2023-03-11 00:44:24,358 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=14.485000 client_order_id=23 message='price is not a multiple of tick size'
+2023-03-11 00:44:25,387 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.500000 client_order_id=24 message='price is not a multiple of tick size'
+2023-03-11 00:44:25,674 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=15.797000 client_order_id=25 message='price is not a multiple of tick size'
+2023-03-11 00:44:25,872 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.000000 client_order_id=26 message='price is not a multiple of tick size'
+2023-03-11 00:44:26,119 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.235000 client_order_id=27 message='price is not a multiple of tick size'
+2023-03-11 00:44:26,356 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.485000 client_order_id=28 message='price is not a multiple of tick size'
+2023-03-11 00:44:26,357 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.485000 client_order_id=29 message='price is not a multiple of tick size'
+2023-03-11 00:44:26,666 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.782000 client_order_id=30 message='price is not a multiple of tick size'
+2023-03-11 00:44:26,844 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=16.969000 client_order_id=31 message='price is not a multiple of tick size'
+2023-03-11 00:44:27,172 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.297000 client_order_id=32 message='price is not a multiple of tick size'
+2023-03-11 00:44:27,385 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=17.500000 client_order_id=33 message='price is not a multiple of tick size'
+2023-03-11 00:44:28,627 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=18.750000 client_order_id=34 message='price is not a multiple of tick size'
+2023-03-11 00:44:29,420 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=19.547000 client_order_id=35 message='price is not a multiple of tick size'
+2023-03-11 00:44:29,871 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=19.985000 client_order_id=36 message='price is not a multiple of tick size'
+2023-03-11 00:44:30,140 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=20.266000 client_order_id=37 message='price is not a multiple of tick size'
+2023-03-11 00:44:30,877 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.000000 client_order_id=38 message='price is not a multiple of tick size'
+2023-03-11 00:44:31,131 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.250000 client_order_id=39 message='price is not a multiple of tick size'
+2023-03-11 00:44:31,131 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.250000 client_order_id=40 message='price is not a multiple of tick size'
+2023-03-11 00:44:31,846 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.969000 client_order_id=41 message='price is not a multiple of tick size'
+2023-03-11 00:44:31,847 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=21.969000 client_order_id=42 message='price is not a multiple of tick size'
+2023-03-11 00:44:32,364 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.485000 client_order_id=43 message='price is not a multiple of tick size'
+2023-03-11 00:44:32,603 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=22.719000 client_order_id=44 message='price is not a multiple of tick size'
+2023-03-11 00:44:33,132 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.250000 client_order_id=45 message='price is not a multiple of tick size'
+2023-03-11 00:44:33,407 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.532000 client_order_id=46 message='price is not a multiple of tick size'
+2023-03-11 00:44:33,680 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=23.797000 client_order_id=47 message='price is not a multiple of tick size'
+2023-03-11 00:44:33,899 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.016000 client_order_id=48 message='price is not a multiple of tick size'
+2023-03-11 00:44:34,129 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.250000 client_order_id=49 message='price is not a multiple of tick size'
+2023-03-11 00:44:34,408 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.532000 client_order_id=50 message='price is not a multiple of tick size'
+2023-03-11 00:44:34,633 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.735000 client_order_id=51 message='price is not a multiple of tick size'
+2023-03-11 00:44:34,634 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=24.750000 client_order_id=52 message='price is not a multiple of tick size'
+2023-03-11 00:44:34,875 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=25.000000 client_order_id=53 message='price is not a multiple of tick size'
+2023-03-11 00:44:35,699 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=25.829000 client_order_id=54 message='price is not a multiple of tick size'
+2023-03-11 00:44:35,877 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.000000 client_order_id=55 message='price is not a multiple of tick size'
+2023-03-11 00:44:36,142 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.266000 client_order_id=56 message='price is not a multiple of tick size'
+2023-03-11 00:44:36,390 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.516000 client_order_id=57 message='price is not a multiple of tick size'
+2023-03-11 00:44:36,393 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.516000 client_order_id=58 message='price is not a multiple of tick size'
+2023-03-11 00:44:36,657 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=26.782000 client_order_id=59 message='price is not a multiple of tick size'
+2023-03-11 00:44:36,895 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.016000 client_order_id=60 message='price is not a multiple of tick size'
+2023-03-11 00:44:37,100 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.219000 client_order_id=61 message='price is not a multiple of tick size'
+2023-03-11 00:44:37,857 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=27.985000 client_order_id=62 message='price is not a multiple of tick size'
+2023-03-11 00:44:38,189 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.313000 client_order_id=63 message='price is not a multiple of tick size'
+2023-03-11 00:44:38,344 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.469000 client_order_id=64 message='price is not a multiple of tick size'
+2023-03-11 00:44:38,347 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.469000 client_order_id=65 message='price is not a multiple of tick size'
+2023-03-11 00:44:38,639 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.766000 client_order_id=66 message='price is not a multiple of tick size'
+2023-03-11 00:44:38,826 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=28.954000 client_order_id=67 message='price is not a multiple of tick size'
+2023-03-11 00:44:39,161 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=29.282000 client_order_id=68 message='price is not a multiple of tick size'
+2023-03-11 00:44:39,641 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=29.766000 client_order_id=69 message='price is not a multiple of tick size'
+2023-03-11 00:44:39,929 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.047000 client_order_id=70 message='price is not a multiple of tick size'
+2023-03-11 00:44:39,930 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.047000 client_order_id=71 message='price is not a multiple of tick size'
+2023-03-11 00:44:40,576 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=30.704000 client_order_id=72 message='price is not a multiple of tick size'
+2023-03-11 00:44:40,889 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.016000 client_order_id=73 message='price is not a multiple of tick size'
+2023-03-11 00:44:41,178 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.297000 client_order_id=74 message='price is not a multiple of tick size'
+2023-03-11 00:44:41,348 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.469000 client_order_id=75 message='price is not a multiple of tick size'
+2023-03-11 00:44:41,584 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.704000 client_order_id=76 message='price is not a multiple of tick size'
+2023-03-11 00:44:41,835 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.954000 client_order_id=77 message='price is not a multiple of tick size'
+2023-03-11 00:44:41,836 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=31.954000 client_order_id=78 message='price is not a multiple of tick size'
+2023-03-11 00:44:42,447 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=32.563000 client_order_id=79 message='price is not a multiple of tick size'
+2023-03-11 00:44:42,449 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=32.579000 client_order_id=80 message='price is not a multiple of tick size'
+2023-03-11 00:44:42,602 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=32.719000 client_order_id=81 message='price is not a multiple of tick size'
+2023-03-11 00:44:42,886 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=33.000000 client_order_id=82 message='price is not a multiple of tick size'
+2023-03-11 00:44:43,158 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=33.282000 client_order_id=83 message='price is not a multiple of tick size'
+2023-03-11 00:44:43,340 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=33.469000 client_order_id=84 message='price is not a multiple of tick size'
+2023-03-11 00:44:43,632 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=33.750000 client_order_id=85 message='price is not a multiple of tick size'
+2023-03-11 00:44:43,834 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=33.954000 client_order_id=86 message='price is not a multiple of tick size'
+2023-03-11 00:44:43,838 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=33.954000 client_order_id=87 message='price is not a multiple of tick size'
+2023-03-11 00:44:44,379 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=34.500000 client_order_id=88 message='price is not a multiple of tick size'
+2023-03-11 00:44:44,380 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=34.500000 client_order_id=89 message='price is not a multiple of tick size'
+2023-03-11 00:44:44,640 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=34.766000 client_order_id=90 message='price is not a multiple of tick size'
+2023-03-11 00:44:44,938 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=35.063000 client_order_id=91 message='price is not a multiple of tick size'
+2023-03-11 00:44:45,154 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=35.282000 client_order_id=92 message='price is not a multiple of tick size'
+2023-03-11 00:44:45,155 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=35.282000 client_order_id=93 message='price is not a multiple of tick size'
+2023-03-11 00:44:45,631 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=35.750000 client_order_id=94 message='price is not a multiple of tick size'
+2023-03-11 00:44:46,090 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=36.219000 client_order_id=95 message='price is not a multiple of tick size'
+2023-03-11 00:44:46,405 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=36.532000 client_order_id=96 message='price is not a multiple of tick size'
+2023-03-11 00:44:46,647 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=36.766000 client_order_id=97 message='price is not a multiple of tick size'
+2023-03-11 00:44:46,898 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.016000 client_order_id=98 message='price is not a multiple of tick size'
+2023-03-11 00:44:47,150 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.266000 client_order_id=99 message='price is not a multiple of tick size'
+2023-03-11 00:44:47,380 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.500000 client_order_id=100 message='price is not a multiple of tick size'
+2023-03-11 00:44:47,676 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=37.797000 client_order_id=101 message='price is not a multiple of tick size'
+2023-03-11 00:44:47,877 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.000000 client_order_id=102 message='price is not a multiple of tick size'
+2023-03-11 00:44:47,877 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.000000 client_order_id=103 message='price is not a multiple of tick size'
+2023-03-11 00:44:48,185 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.313000 client_order_id=104 message='price is not a multiple of tick size'
+2023-03-11 00:44:48,429 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.547000 client_order_id=105 message='price is not a multiple of tick size'
+2023-03-11 00:44:48,652 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=38.782000 client_order_id=106 message='price is not a multiple of tick size'
+2023-03-11 00:44:49,156 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=39.282000 client_order_id=107 message='price is not a multiple of tick size'
+2023-03-11 00:44:49,603 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=39.719000 client_order_id=108 message='price is not a multiple of tick size'
+2023-03-11 00:44:49,603 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=39.719000 client_order_id=109 message='price is not a multiple of tick size'
+2023-03-11 00:44:50,626 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=40.750000 client_order_id=110 message='price is not a multiple of tick size'
+2023-03-11 00:44:50,859 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=40.985000 client_order_id=111 message='price is not a multiple of tick size'
+2023-03-11 00:44:51,169 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=41.282000 client_order_id=112 message='price is not a multiple of tick size'
+2023-03-11 00:44:51,416 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=41.532000 client_order_id=113 message='price is not a multiple of tick size'
+2023-03-11 00:44:51,655 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=41.782000 client_order_id=114 message='price is not a multiple of tick size'
+2023-03-11 00:44:51,902 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=42.016000 client_order_id=115 message='price is not a multiple of tick size'
+2023-03-11 00:44:52,140 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=42.266000 client_order_id=116 message='price is not a multiple of tick size'
+2023-03-11 00:44:52,390 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=42.516000 client_order_id=117 message='price is not a multiple of tick size'
+2023-03-11 00:44:52,625 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=42.750000 client_order_id=118 message='price is not a multiple of tick size'
+2023-03-11 00:44:53,417 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=43.547000 client_order_id=119 message='price is not a multiple of tick size'
+2023-03-11 00:44:53,670 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=43.797000 client_order_id=120 message='price is not a multiple of tick size'
+2023-03-11 00:44:53,671 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=43.797000 client_order_id=121 message='price is not a multiple of tick size'
+2023-03-11 00:44:53,849 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=43.969000 client_order_id=122 message='price is not a multiple of tick size'
+2023-03-11 00:44:54,416 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=44.532000 client_order_id=123 message='price is not a multiple of tick size'
+2023-03-11 00:44:54,620 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=44.750000 client_order_id=124 message='price is not a multiple of tick size'
+2023-03-11 00:44:55,122 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=45.250000 client_order_id=125 message='price is not a multiple of tick size'
+2023-03-11 00:44:55,391 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=45.516000 client_order_id=126 message='price is not a multiple of tick size'
+2023-03-11 00:44:55,603 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=45.719000 client_order_id=127 message='price is not a multiple of tick size'
+2023-03-11 00:44:55,886 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=46.016000 client_order_id=128 message='price is not a multiple of tick size'
+2023-03-11 00:44:56,127 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=46.250000 client_order_id=129 message='price is not a multiple of tick size'
+2023-03-11 00:44:56,384 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=46.500000 client_order_id=130 message='price is not a multiple of tick size'
+2023-03-11 00:44:56,636 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=46.766000 client_order_id=131 message='price is not a multiple of tick size'
+2023-03-11 00:44:56,880 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.000000 client_order_id=132 message='price is not a multiple of tick size'
+2023-03-11 00:44:57,179 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.297000 client_order_id=133 message='price is not a multiple of tick size'
+2023-03-11 00:44:57,385 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.500000 client_order_id=134 message='price is not a multiple of tick size'
+2023-03-11 00:44:57,636 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.766000 client_order_id=135 message='price is not a multiple of tick size'
+2023-03-11 00:44:57,869 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=47.985000 client_order_id=136 message='price is not a multiple of tick size'
+2023-03-11 00:44:58,188 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=48.313000 client_order_id=137 message='price is not a multiple of tick size'
+2023-03-11 00:44:58,356 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=48.485000 client_order_id=138 message='price is not a multiple of tick size'
+2023-03-11 00:44:58,639 [INFO   ] [COMPETITOR] 'Dummy' sent error message: time=48.766000 client_order_id=139 message='price is not a multiple of tick size'
+2023-03-11 00:45:25,203 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:45:25,204 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:45:25,206 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:45:25,206 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:45:25,208 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:45:25,238 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:45:25,239 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:45:25,293 [INFO   ] [CONNECTION] fd=644 connection established: peer=127.0.0.1:55544
+2023-03-11 00:45:25,294 [INFO   ] [EXECUTION] fd=644 'Dummy' is ready!
+2023-03-11 00:45:25,428 [INFO   ] [CONNECTION] fd=1216 connection established: peer=127.0.0.1:55545
+2023-03-11 00:45:30,280 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:46:38,655 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:46:38,656 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:46:38,657 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:46:38,658 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:46:38,659 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:46:38,672 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:46:38,672 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:46:38,709 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55554
+2023-03-11 00:46:38,711 [INFO   ] [EXECUTION] fd=1192 'Dummy' is ready!
+2023-03-11 00:46:38,909 [INFO   ] [CONNECTION] fd=1196 connection established: peer=127.0.0.1:55555
+2023-03-11 00:46:43,694 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:48:40,844 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:48:40,845 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:48:40,846 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:48:40,846 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:48:40,847 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:48:40,848 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:48:40,849 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:48:40,876 [INFO   ] [CONNECTION] fd=1180 connection established: peer=127.0.0.1:55656
+2023-03-11 00:48:40,877 [INFO   ] [EXECUTION] fd=1180 'Dummy' is ready!
+2023-03-11 00:48:41,297 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55657
+2023-03-11 00:48:45,861 [INFO   ] [CONTROLLER] market open
+2023-03-11 00:54:09,277 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 00:54:09,277 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 00:54:09,278 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 00:54:09,279 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 00:54:09,280 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 00:54:09,292 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 00:54:09,292 [INFO   ] [INFORMATION] information channel established
+2023-03-11 00:54:09,311 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55692
+2023-03-11 00:54:09,312 [INFO   ] [EXECUTION] fd=1192 'Dummy' is ready!
+2023-03-11 00:54:09,602 [INFO   ] [CONNECTION] fd=1180 connection established: peer=127.0.0.1:55693
+2023-03-11 00:54:14,324 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:01:10,415 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:01:10,415 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:01:10,416 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:01:10,416 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:01:10,417 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:01:10,425 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:01:10,426 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:01:10,439 [INFO   ] [CONNECTION] fd=1180 connection established: peer=127.0.0.1:55735
+2023-03-11 01:01:10,439 [INFO   ] [EXECUTION] fd=1180 'Dummy' is ready!
+2023-03-11 01:01:11,278 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55736
+2023-03-11 01:01:15,443 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:04:30,175 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:04:30,176 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:04:30,177 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:04:30,177 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:04:30,178 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:04:30,186 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:04:30,186 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:04:30,228 [INFO   ] [CONNECTION] fd=1184 connection established: peer=127.0.0.1:55757
+2023-03-11 01:04:30,228 [INFO   ] [EXECUTION] fd=1184 'Dummy' is ready!
+2023-03-11 01:04:30,935 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55758
+2023-03-11 01:04:35,204 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:06:53,538 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:06:53,539 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:06:53,539 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:06:53,540 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:06:53,540 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:06:53,551 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:06:53,552 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:06:53,569 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55767
+2023-03-11 01:06:53,569 [INFO   ] [EXECUTION] fd=1192 'Dummy' is ready!
+2023-03-11 01:06:54,277 [INFO   ] [CONNECTION] fd=1196 connection established: peer=127.0.0.1:55768
+2023-03-11 01:06:58,565 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:11:55,078 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:11:55,078 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:11:55,078 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:11:55,079 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:11:55,079 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:11:55,087 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:11:55,088 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:11:55,089 [INFO   ] [CONNECTION] fd=896 connection established: peer=127.0.0.1:55797
+2023-03-11 01:11:55,100 [INFO   ] [EXECUTION] fd=896 'Dummy' is ready!
+2023-03-11 01:11:55,609 [INFO   ] [CONNECTION] fd=1196 connection established: peer=127.0.0.1:55798
+2023-03-11 01:12:00,105 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:12:47,577 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:12:47,577 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:12:47,578 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:12:47,578 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:12:47,579 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:12:47,591 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:12:47,591 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:12:47,618 [INFO   ] [CONNECTION] fd=1180 connection established: peer=127.0.0.1:55806
+2023-03-11 01:12:47,618 [INFO   ] [EXECUTION] fd=1180 'Dummy' is ready!
+2023-03-11 01:12:48,385 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55807
+2023-03-11 01:12:52,605 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:17:00,443 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:17:00,443 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:17:00,444 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:17:00,444 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:17:00,444 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:17:00,452 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:17:00,453 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:17:00,467 [INFO   ] [CONNECTION] fd=1184 connection established: peer=127.0.0.1:55840
+2023-03-11 01:17:00,468 [INFO   ] [EXECUTION] fd=1184 'Dummy' is ready!
+2023-03-11 01:17:01,159 [INFO   ] [CONNECTION] fd=1196 connection established: peer=127.0.0.1:55841
+2023-03-11 01:17:05,480 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:19:40,344 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:19:40,344 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:19:40,345 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:19:40,345 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:19:40,346 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:19:40,356 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:19:40,357 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:19:40,393 [INFO   ] [CONNECTION] fd=1084 connection established: peer=127.0.0.1:55857
+2023-03-11 01:19:40,394 [INFO   ] [EXECUTION] fd=1084 'Dummy' is ready!
+2023-03-11 01:19:41,020 [INFO   ] [CONNECTION] fd=1096 connection established: peer=127.0.0.1:55858
+2023-03-11 01:19:45,393 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:21:36,527 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:21:36,527 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:21:36,528 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:21:36,528 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:21:36,529 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:21:36,540 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:21:36,540 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:21:36,554 [INFO   ] [CONNECTION] fd=1180 connection established: peer=127.0.0.1:55875
+2023-03-11 01:21:36,555 [INFO   ] [EXECUTION] fd=1180 'Dummy' is ready!
+2023-03-11 01:21:37,216 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55876
+2023-03-11 01:21:41,549 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:23:34,230 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:23:34,231 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:23:34,231 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:23:34,232 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:23:34,233 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:23:34,240 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:23:34,241 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:23:34,255 [INFO   ] [CONNECTION] fd=1212 connection established: peer=127.0.0.1:55892
+2023-03-11 01:23:34,256 [INFO   ] [EXECUTION] fd=1212 'Dummy' is ready!
+2023-03-11 01:23:34,917 [INFO   ] [CONNECTION] fd=764 connection established: peer=127.0.0.1:55893
+2023-03-11 01:23:39,248 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:26:07,271 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:26:07,272 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:26:07,274 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:26:07,274 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:26:07,275 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:26:07,286 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:26:07,286 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:26:07,302 [INFO   ] [CONNECTION] fd=1180 connection established: peer=127.0.0.1:55911
+2023-03-11 01:26:07,303 [INFO   ] [EXECUTION] fd=1180 'Dummy' is ready!
+2023-03-11 01:26:07,867 [INFO   ] [CONNECTION] fd=1192 connection established: peer=127.0.0.1:55912
+2023-03-11 01:26:12,310 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:26:33,174 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:26:33,174 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:26:33,175 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:26:33,175 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:26:33,176 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:26:33,185 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:26:33,185 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:26:33,241 [INFO   ] [CONNECTION] fd=1208 connection established: peer=127.0.0.1:55920
+2023-03-11 01:26:33,242 [INFO   ] [EXECUTION] fd=1208 'Dummy' is ready!
+2023-03-11 01:26:33,784 [INFO   ] [CONNECTION] fd=1156 connection established: peer=127.0.0.1:55921
+2023-03-11 01:26:38,220 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:27:54,441 [INFO   ] [APP] exchange started with arguments={rtg.py, run, dummy.py}
+2023-03-11 01:27:54,441 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","Dummy":"snooze"}}
+2023-03-11 01:27:54,442 [INFO   ] [CONTROLLER] starting the match
+2023-03-11 01:27:54,442 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-11 01:27:54,443 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-11 01:27:54,452 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-11 01:27:54,453 [INFO   ] [INFORMATION] information channel established
+2023-03-11 01:27:54,470 [INFO   ] [CONNECTION] fd=1084 connection established: peer=127.0.0.1:55932
+2023-03-11 01:27:54,471 [INFO   ] [EXECUTION] fd=1084 'Dummy' is ready!
+2023-03-11 01:27:55,149 [INFO   ] [CONNECTION] fd=1196 connection established: peer=127.0.0.1:55933
+2023-03-11 01:27:59,484 [INFO   ] [CONTROLLER] market open
+2023-03-11 01:42:55,973 [INFO   ] [MARKET_EVENTS] reader thread complete after processing 461484 market events
+2023-03-11 01:42:59,499 [INFO   ] [TIMER] shutting down the match: time=900.015000 reason='match complete'
+2023-03-11 01:42:59,500 [INFO   ] [COMPETITOR] 'Dummy' closing execution channel at time=900.015000
+2023-03-11 01:42:59,503 [INFO   ] [CONNECTION] fd=1084 connection lost
+2023-03-11 01:42:59,505 [INFO   ] [SCORE_BOARD] writer thread complete after processing 3601 score records
+2023-03-11 01:42:59,507 [INFO   ] [MATCH_EVENTS] writer thread complete after processing 461628 match events
+2023-03-11 01:42:59,509 [INFO   ] [APP] closing event loop
