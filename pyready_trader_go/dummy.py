@@ -75,6 +75,9 @@ class AutoTrader(BaseAutoTrader):
         self.z_score = 0
         self.prev_z = 0
 
+        self.open = 0
+        self.unexposed = 0
+
 
 
 
@@ -147,7 +150,7 @@ class AutoTrader(BaseAutoTrader):
             square = (self.fut_etf_ratio - self.fut_etf_ratio_avg) ** 2
             self.sum_squares += square
             self.ratio50.append(square)
-            if len(self.fut_etf_spread50) > 50:
+            if len(self.ratio50) > 50:
                 self.sum_squares -= self.ratio50.pop(0)
             
             
@@ -156,29 +159,61 @@ class AutoTrader(BaseAutoTrader):
 
         self.fut_etf_ratio_avg = self.fut_etf_ratio_sum / 50
 
-        # print(f' avg: {self.fut_etf_ratio_avg} ratio: {self.fut_etf_ratio} sd: {self.ratio_sd} zscore: {self.z_score}')
-        print(f'zscore: {self.z_score} sumsquares: {self.sum_squares}')
+        print(f' avg: {self.fut_etf_ratio_avg} ratio: {self.fut_etf_ratio} sd: {self.ratio_sd} zscore: {self.z_score}')
+        # print(f'zscore: {self.z_score} sumsquares: {self.sum_squares}')
 
         '''Short when z-score above 1 and long when z-score below 1.'''
         #right now, I think it's losing money on trades where the prices are near the convergence but the ask/bid spread is negative, so it trades at a loss
-        
-        if self.ready and self.z_score > self.prev_z and self.z_score > 1:
-            self.etf_buy(20)
 
-        elif self.ready and self.z_score < self.prev_z and self.z_score < -1:
+        if self.ready and self.z_score > 1.75 and self.etf_ask < self.fut_bid:
+            self.etf_buy(30)
+        elif self.ready and self.z_score < -1.75 and self.etf_ask < self.fut_bid and self.position > 0:
+            self.etf_sell(30)
+        elif self.ready and self.z_score > 1.75 and self.etf_bid > self.fut_ask and self.position < 0:
+            self.etf_buy(30)
+        elif self.ready and self.z_score < -1.75 and self.etf_bid > self.fut_ask:
+            self.etf_sell(30)
+        
+        elif self.ready and self.z_score > 1.25 and self.etf_ask < self.fut_bid:
+            self.etf_buy(20)
+        elif self.ready and self.z_score < -1.25 and self.etf_ask < self.fut_bid and self.position > 0:
+            self.etf_sell(20)
+        elif self.ready and self.z_score > 1.25 and self.etf_bid > self.fut_ask and self.position < 0:
+            self.etf_buy(20)
+        elif self.ready and self.z_score < -1.25 and self.etf_bid > self.fut_ask:
             self.etf_sell(20)
         
-        elif self.ready and self.z_score > self.prev_z and self.z_score > 0.75:
-            self.etf_buy(LOT_SIZE)
+        elif self.ready and self.z_score > 0.75 and self.etf_ask < self.fut_bid:
+            self.etf_buy(10)
+        elif self.ready and self.z_score < -0.75 and self.etf_ask < self.fut_bid and self.position > 0:
+            self.etf_sell(10)
+        elif self.ready and self.z_score > 0.75 and self.etf_bid > self.fut_ask and self.position < 0:
+            self.etf_buy(10)
+        elif self.ready and self.z_score < 0.75 and self.etf_bid > self.fut_ask:
+            self.etf_sell(10)
+        
+        # elif self.ready and self.z_score > 0.5 and self.etf_ask < self.fut_bid:
+        #     self.etf_buy(5)
+        # elif self.ready and self.z_score < -0.5 and self.etf_ask < self.fut_bid and self.position > 0:
+        #     self.etf_sell(5)
+        # elif self.ready and self.z_score > 0.5 and self.etf_bid > self.fut_ask and self.position < 0:
+        #     self.etf_buy(5)
+        # elif self.ready and self.z_score < 0.5 and self.etf_bid > self.fut_ask:
+        #     self.etf_sell(5)
+        
+        # elif self.etf_ask < self.fut_bid:
+        #     self.etf_buy(4)
+        # elif self.etf_bid > self.fut_ask:
+        #     self.etf_sell(4)
 
-        elif self.ready and self.z_score < self.prev_z and self.z_score < -0.75:
-            self.etf_sell(LOT_SIZE)
 
-        elif self.ready and self.z_score > self.prev_z and self.z_score > 0.5:
-            self.etf_buy(1)
 
-        elif self.ready and self.z_score < self.prev_z and self.z_score < -0.5:
-            self.etf_sell(1)
+        # elif self.ready and self.z_score > self.prev_z and self.z_score > 0.5:
+        #     self.etf_buy(1)
+
+        # elif self.ready and self.z_score < self.prev_z and self.z_score < -0.5:
+        #     self.etf_sell(1)
+
 
 
         
@@ -200,13 +235,13 @@ class AutoTrader(BaseAutoTrader):
         if client_order_id in self.bids:
             self.position += volume
             self.send_hedge_order(next(self.order_ids), Side.ASK, self.fut_bid, volume)
-            print(f'spread: {self.fut_bid - self.etf_ask}')
+            # print(f'spread: {self.fut_bid - self.etf_ask}')
             self.buy_trigger = True
             self.sell_trigger = False
         elif client_order_id in self.asks:
             self.position -= volume
             self.send_hedge_order(next(self.order_ids), Side.BID, self.fut_ask, volume)
-            print(f'spread: {self.etf_bid - self.fut_ask}')
+            # print(f'spread: {self.etf_bid - self.fut_ask}')
             self.sell_trigger = True
             self.buy_trigger = True
 
